@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Birthday';
+  src:url('Sweet Sensations.ttf');
+}
+body {
+  overflow: hidden;
+  background-color: 	#ea0b59;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+.text {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-family: "Birthday";
+  font-size: 65px;
+  color: white;
+  text-shadow: #ffffff 0 0 10px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.snake {
+  width: 3000px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -3050px;
+  transition: 4s;
+}
+.tail {
+  width: 500px;
+  height: 200px;
+}
+.body {
+  /* background-color: green; */
+  width: 2100px;
+  height: 200px;
+  background-image: url(scale.png);
+  background-repeat: repeat;
+}
+.head {
+  width: 400px;
+  height: 268px;
+
+}
+.headTop {
+  width: 400px;
+  height: 134px;
+  transform-origin: bottom left;
+  transition: 4s;
+  border: 1px solid white;
+  background-image: url(scale.png);
+  background-repeat: repeat;
+  border-left: 0;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 32px;
+  position: relative;
+}
+.headBottom {
+  width: 400px;
+  height: 134px;
+  transform-origin: top left;
+  transition: 4s;
+  border: 1px solid white;
+  border-left: 0;
+  background-image: url(scale-1.png);
+  background-repeat: repeat;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 32px;
+}
+.eye {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: yellow;
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pupil {
+  width: 10px;
+  height: 40px;
+  background-color: black;
+  border-radius: 100%;
+}
+.heart {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  /* transition: 1s; */
+}
